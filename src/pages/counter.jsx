@@ -4,7 +4,6 @@ import { useRef, useState } from 'react';
 function Counter() {
   const countRef = useRef(0);
   const [count, setCount] = useState(0);
-  console.log(countRef.current);
 
     const Inc = () => {
       countRef.current = countRef.current + 1;
@@ -14,8 +13,6 @@ function Counter() {
       countRef.current = countRef.current - 1;
       setCount(countRef.current);
     }
-
-    console.log(countRef.current);
   return (
     <div className="App">
       <h1> Counter App</h1>
